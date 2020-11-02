@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .all{
+    z-index: 3;
+  }
+
+body{
+  background: black;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    color: black;
+    margin: 0px;
+    width: 100vw;
+    transition: background-image 1s ease-in-out;
+}
+
+.btn1 {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin-right: auto;
+}
+.btn1:hover {
+  filter: grayscale(.8);
+}
+.btn1:active,
+.btn1:focus {
+  outline: 0;
+}
+.btn1:active{
+  transform: scale(1.02)
+}
+
+.in_pic, .out_pic {
+  position: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.in_pic { z-index: 2;}
+.out_pic { z-index: -1;}
+
+.weather-description{
+  font: 1.2rem Georgia, serif;
+  
+}
+
+.temperature{
+  font-size: 36px;
+}
+
+.focus1{
+  margin-top: -15px;
+}
+
+.city{
+  font: 1.2rem Georgia, serif;
+}
+
+.time {
+    font-size: 8rem;
+  }
+
+h1 {
+    margin-bottom: 3rem;
+  }
+
+h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+    .time {
+      font-size: 6rem;
+      
+    }
+  }
+
+  .quote {
+    font: 1.2rem Georgia, serif;
+    margin: 0;
+    background: #476367;
+    padding: 1em;
+    border-radius: 1em;
+    opacity: 0.7;
+  }
+  .quote figcaption,
+  .quote blockquote {
+    margin: 1em;
+  }
+  .quote figcaption {
+    text-align: right;
+  }
+  .btn {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-radius: 50%;
+    background-image: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(.8);
+    margin: 10px;
+  }
+  .btn:hover {
+    filter: grayscale(.2);
+  }
+  .btn:active,
+  .btn:focus {
+    outline: 0;
+  }
+  .btn:active{
+    transform: scale(1.02)
+  }
+
